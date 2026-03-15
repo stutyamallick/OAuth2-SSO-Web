@@ -42,7 +42,7 @@ const Layout = () => {
   }
 
   const handleOptionSelection = (optionType) => {
-    axios.get("/api/getContactDetails/"+optionType)
+    axios.get("/api/contactDetails/"+optionType)
       .then(function (response) {
         console.log(response.data);
         setContactDetails(response.data);
@@ -100,7 +100,7 @@ const Layout = () => {
             <p>Based on your location and car you own. Find below the details-</p>
             <p>Dealer Name: <strong>{contactDetails.dealerName}</strong></p>
             <p>Address: <strong>{contactDetails.address}</strong></p>
-            <p>Contact Number: <strong>{contactDetails.contactNumer}</strong></p>
+            <p>Contact Number: <strong>{contactDetails.contactNumber}</strong></p>
           </div>
 
         </div>

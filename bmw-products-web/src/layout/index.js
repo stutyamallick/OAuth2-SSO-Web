@@ -63,7 +63,7 @@ export default function Layout() {
           {carDetails.price}
 
           <strong>ENGINE</strong>
-          {carDetails.engine}
+          {carDetails.engineCc}
         </div>
       }
 
